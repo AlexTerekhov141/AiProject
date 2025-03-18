@@ -68,11 +68,11 @@ model.compile(optimizer=optimiser,
                   metrics=['accuracy'])
 
 print(model.summary())
-with open('scaler.pkl', 'wb') as f:
+with open('backend/api/scaler.pkl', 'wb') as f:
     pickle.dump(scaler, f)
 
 
-with open('encoder.pkl', 'wb') as f:
+with open('backend/api/encoder.pkl', 'wb') as f:
     pickle.dump(encoder, f)
 
 print("Объекты scaler и encoder успешно сохранены!")

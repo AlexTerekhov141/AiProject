@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: api
+      dockerfile: Dockerfile
+    ports:
+      - '8000:8000'   # Mapping the API port
+    networks:
+      - backend-net
+
+  bot:
+    build:
+      context: tgbot
+      dockerfile: Dockerfile
+    networks:
+      - backend-net
+    env_file:
+      - .env
+
+networks:
+  backend-net:
+    driver: bridge

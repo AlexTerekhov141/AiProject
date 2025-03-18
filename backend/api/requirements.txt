@@ -1,0 +1,12 @@
+numpy
+librosa
+pandas
+matplotlib
+seaborn
+scikit-learn
+tensorflow
+keras
+fastapi
+aiogram
+uvicorn
+python-multipart

@@ -28,8 +28,3 @@ def predict_audio(file_path):
 
     return predicted_label[0][0]
 
-
-if __name__ == "__main__":
-    audio_file = 'audio_speech_actors_01-24/Actor_03/03-01-05-02-01-02-03.wav'
-    predicted = predict_audio(audio_file)
-    print("Предсказанная метка:", predicted)
